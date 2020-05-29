@@ -2882,7 +2882,7 @@ function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _d
         _classCallCheck(this, ProductService);
 
         this.http = http;
-        this.productUrl = 'api/products/products.json';
+        this.productUrl = '/products.json';
       }
 
       _createClass(ProductService, [{
