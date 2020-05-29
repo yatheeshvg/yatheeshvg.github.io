@@ -1446,7 +1446,7 @@ __webpack_require__.r(__webpack_exports__);
 class ProductService {
     constructor(http) {
         this.http = http;
-        this.productUrl = 'api/products/products.json';
+        this.productUrl = '/products.json';
     }
     getProducts() {
         return this.http.get(this.productUrl)
