@@ -43,6 +43,17 @@
   .play-btn:focus {
     outline: 0;
   }
+    @media screen and (max-width: 480px) {
+   .play-btn {
+    position: absolute;
+    z-index: 666;
+    top: 40%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 0;
+  }
+}
 </style>
   </head>
   <body>
@@ -87,14 +98,14 @@
   crossorigin="anonymous"
 ></script>
 <script>
-  $("#play").on("click", function (e) {
+ /* $("#play").on("click", function (e) {
     // e.preventDefault();
     $("#player")[0].src += "?autoplay=1";
     $("#player").show();
     $("#player").trigger("click");
     $("#video-cover").hide();
     $("#play").hide();
-  });
+  }); */
 
   var tag = document.createElement("script");
   tag.src = "https://www.youtube.com/iframe_api";
